@@ -136,7 +136,7 @@ BOOTSTRAP3 = {
  }
 
 # Heroku settings.
-# import os
+import os
 # import django_heroku
 # django_heroku.settings(locals())
 if os.getcwd() == '/app':
