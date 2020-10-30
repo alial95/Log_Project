@@ -6,7 +6,7 @@ from .forms import TopicForm, EntryForm
 # Create your views here.
 def index(request):
     """The home page for Learning Log."""
-    return render(request, 'templates/learning_logs/index.html')
+    return render(request, 'learning_logs/index.html')
 
 @login_required
 def topics(request):
@@ -43,7 +43,7 @@ def new_topic(request):
             return redirect('learning_logs:topics')
     # Display a blank or invalid form.
     context = {'form': form}
-    return render(request, 'templates/learning_logs/new_topic.html', context)
+    return render(request, 'learning_logs/new_topic.html', context)
 
 
 @login_required
