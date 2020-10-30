@@ -6,7 +6,7 @@ from .forms import TopicForm, EntryForm
 # Create your views here.
 def index(request):
     """The home page for Learning Log."""
-    return render(request, 'learning_logs/index.html')
+    return render(request, 'templates/learning_logs/index.html')
 
 @login_required
 def topics(request):
