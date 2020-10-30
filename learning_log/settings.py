@@ -136,9 +136,9 @@ BOOTSTRAP3 = {
  }
 
 # Heroku settings.
-import os
-import django_heroku
-django_heroku.settings(locals())
+# import os
+# import django_heroku
+# django_heroku.settings(locals())
 if os.getcwd() == '/app':
     import dj_database_url
     DATABASES = {
