@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'users',
 
     # Third party apps.
-    'bootstrap3',
+    'bootstrap4',
 
     # """Default django apps."""
     'django.contrib.admin',
@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 LOGIN_URL = 'users:login'
 
 # Settings for django-bootstrap3
-BOOTSTRAP3 = {
+BOOTSTRAP4 = {
  'include_jquery': True,
  }
 
